@@ -1,0 +1,286 @@
+#home{
+    margin: 6rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text{
+    width: 100%;
+    z-index: 1;
+}
+#home .hero{
+    padding: 0 3rem;
+    display: flex;
+}
+.hero-text h2{
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+.hero-text p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-left: 1px solid rgb(162, 162, 162);
+}
+.hero-image{
+    width: 100%;
+    display: flex;
+    /* position: absolute; */
+    top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img{
+    width: 100%;
+    z-index: 1;
+}
+.hero-image .bg{
+    height: 40%;
+    width: 60%;
+    position: absolute;
+    background-color: rgba(47, 47, 47, 1);
+    border-radius: 30px;
+    margin-right: 9rem;
+}
+#home .mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/3d/mission.png);
+}
+#home .mission p{
+    /* */
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: left;
+
+}
+#home .mission h3{
+    /* */
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    width: 50%;
+    text-align: center;
+}
+#home .founder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#home .founder .text{
+    width: 40%;
+    padding: 2rem;
+}
+#home .founder .info{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+#home .founder .title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 20px;
+    text-align: left;
+
+}
+#home .founder .intro{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#home .goal{
+    width: 90%;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 60px;
+    margin: 4rem 0;
+    color: black;
+}
+#home .header{
+    width: 60%;
+}
+#home .header p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 20px;
+    text-align: left;
+}
+#home .header h3{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+#home .goal  .tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+
+}
+#home .tab ul{
+    margin: 0;
+    padding: 0;
+}
+#home .goal li{
+    list-style: none;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 2rem 0;
+    cursor: pointer;
+    
+}
+#home .goal .tab-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: rgba(37, 37, 37, 1);
+    border-radius: 3rem;
+    width: 30%;
+    color: white;
+}
+#home .goal .tab-info img{
+    width: 70%;
+}
+#home .goal .tab-info .desc{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90%;
+}
+#home .goal .tab-info button{
+    padding: 1rem 2rem;
+    background: rgba(0, 153, 255, 1);
+    color: white;
+    border-radius: 30px;
+    margin: .5rem 0;
+}
+.active{
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.558);
+    list-style: circle;
+}
+#home .goal .tab .index{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(202, 202, 202, 1);
+}
+#home .Products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0;
+}
+#home .Products .title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 20px;
+    text-align: left;
+}
+#home .Products .subtitle{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+#home .Products .product{
+    height: 40%;
+    width: 85%;
+    background-color: rgba(47, 47, 47, 1);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+    padding: 0 4rem;
+}
+#home .Products .product:nth-child(even){
+    flex-direction: row-reverse;
+}
+#home .Products .product img{
+    width: 30%;
+}
+#home .Products .product-text{
+    width: 40%;
+    padding: 1rem;
+}
+#home .Products .product-text .title{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+#home .Products .product-text .subtitle{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+#home .Products .product-text .action-btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(0, 153, 255, 1);
+    border-radius: 30px;
+}
+#home .roadmap{
+    width: 90%;
+    margin: 6rem 0;
+}
+#home .roadmap-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home .roadmap-chart img{
+    width: 100%;
+    margin: 2rem 0;
+}
+#home .roadmap .subtitle{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
