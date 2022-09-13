@@ -147,6 +147,9 @@ const Home = () => {
                 <img src={home.roadmap} alt="" />
             </div>
         </section>
+        <section className="contact">
+            
+        </section>
     </main>
   )
 }
