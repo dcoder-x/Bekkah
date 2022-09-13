@@ -30,6 +30,7 @@ body {
   background: rgba(37, 37, 37, 1);
   min-height: 100vh;
   color: white;
+  min-height: 100vh;
 }
 
 h1 {
