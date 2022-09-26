@@ -1,0 +1,93 @@
+#services{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#services .header{
+    /* padding: 2rem; */
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    background: linear-gradient(20deg,rgba(41, 108, 153, 0.218),rgba(34, 34, 34, 0.349)),url(../assets/images/ai-energy.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#services .header-text p{
+    font-size: 100px;
+    margin-left: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 1;
+
+}
+#services .header-image{
+    clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70%;
+    background-color: rgba(52, 52, 52, 0.184);
+    height: 100%;
+    backdrop-filter:   saturate(150%) sepia(40%) hue-rotate(60deg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* background: linear-gradient(0deg,rgba(0, 0, 0, 0.475),rgba(0, 119, 255, 0.382)),url(../assets/images/ai.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+#services .header-image p{
+    width: 40%;
+    text-align: left;
+    margin-right: 20%;
+    font-size: 40px;
+    /* color: rgb(193, 240, 255); */
+    line-height: 1;
+}
+#services .service{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+#services .service:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+#services .service .title{
+    font-size: 50px;
+    margin: 2rem 0;
+    line-height: 1;
+    color: rgb(85, 204, 255);
+}
+#services .service .desc{
+    width: 90%;
+}
+#services .service img{
+    width: 40%;
+    /* max-height: 40vh; */
+}
+#services .book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    padding: 4rem 0;
+}
+#services .book button{
+    background-color:rgb(85, 181, 255) ;
+    color: white;
+    font-size: 20px;
+}

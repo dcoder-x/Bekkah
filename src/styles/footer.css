@@ -10,6 +10,7 @@
     padding: 1rem;
     overflow: hidden;
     padding: 2rem 0;
+    /* position: absolute; */
 }
 #footer .footer-links{
     display: flex;

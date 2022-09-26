@@ -284,3 +284,11 @@
     text-align: left;
 
 }
+ .patners{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.607);
+}

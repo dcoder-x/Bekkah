@@ -9,7 +9,11 @@ export const navData =[
     },
     {
         name:'Services',
-        link:'/home'
+        link:'/services'
+    },
+    {
+        name:'Projects',
+        link:'/projects'
     },
     {
         name:'Contact',

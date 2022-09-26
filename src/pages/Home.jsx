@@ -1,15 +1,148 @@
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Icon } from "@iconify/react";
 import React from 'react'
+import { useRef } from "react";
+import { useEffect } from 'react'
 import { useState } from 'react'
 import { home } from '../assets/assets'
 import { tabData } from '../data/tabData'
 import '../styles/home.css'
 
 const Home = () => {
+    const heroref= useRef(null)
     const [index, setindex] = useState(0)
+    const tl = useRef()
+    const ref = useRef()
+    const productRef = useRef()
+
+
+    gsap.registerPlugin(ScrollTrigger)
+    useEffect(()=>{
+        const homeref = ref.current
+        const products = document.querySelectorAll('.product')
+
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+                if (entry.isIntersecting) {
+                    gsap.fromTo(entry.target,
+                        {
+                            xPercent:100,
+                            opacity:0,
+                            stagger:1
+                        },
+                        {
+                            xPercent:0,
+                            opacity:1,
+                            stagger:1,
+                            duration:4,
+                            ease:'power3.out',
+                        }
+                    )
+                    // entry.target.style.display='none'
+                    console.log(entry.target)
+                }
+            })
+        })
+        products.forEach(product=>{
+            observer.observe(product)
+        })
+        
+        tl.current = gsap.timeline()
+        // .fromTo(homeref.querySelectorAll('.product'),
+        // {
+        //     y:100,
+        //     opacity:0
+        //   },
+        //   {
+        //     y:0,
+        //     opacity:1,
+        //     stagger:1,
+        //     ease:'power3.out',
+        //     scrollTrigger: {
+        //       trigger: homeref.querySelector(".product"),
+        //       start:'top center',
+        //       // end: "center 100", pin:true,
+        //       pinSpacing:false,
+        //       toggleActions:'restart reverse restart reverse',
+        //       // scrub: true,
+        //       markers:true
+        //     }
+        //   }
+        // )
+        gsap.fromTo(homeref.querySelector('.hero-text'),{
+            xPercent:-100,
+
+        },
+        {
+            xPercent:0,
+            ease:"power4.out",
+            duration:3,
+        })
+        gsap.fromTo(homeref.querySelector('.hero-image'),
+        {
+            xPercent:100,
+
+        },
+        {
+            xPercent:0,
+            ease:'power1.out',
+            duration:3,
+        },
+        '<'
+        )
+        gsap.fromTo(
+            homeref.querySelector(".mission"),
+            {
+              yPercent:100,
+              opacity:0
+            },
+            {
+              yPercent:0,
+              opacity:1,
+              ease:'power3.out',
+              duration:3,
+              scrollTrigger: {
+                trigger: homeref.querySelector(".mission"),
+                start: "top bottom",
+                // end: "center 100", pin:true,
+                pinSpacing:false,
+                toggleActions:'restart reverse restart reverse',
+                // scrub: true,
+                // markers:true
+              }
+            }
+          );
+          gsap.fromTo(
+            homeref.querySelector(".goal"),
+            {
+              yPercent:100,
+              opacity:0
+            },
+            {
+              yPercent:0,
+              opacity:1,
+              ease:'power3.out',
+              duration:3,
+              scrollTrigger: {
+                trigger: homeref.querySelector(".goal"),
+                start: "top 200%",
+                pinSpacing:false,
+                // end: "center 100",
+                toggleActions:'restart reverse restart reverse',
+                // scrub: true,
+                // markers:true
+              }
+            }
+          );
+
+    },[])
+
   return (
-    <main id="home">
+    <main id="home" ref={ref}>
         <section className='hero'>
-            <div className="hero-text">
+            <div ref={heroref} className="hero-text">
                 <h2>
                 We build technology for humanity
                 </h2>
@@ -85,7 +218,7 @@ const Home = () => {
             <p className='subtitle' >
             Check out our newest applications
             </p>
-            <div className="product">
+            <div ref={productRef} className="product">
                 <img  src={home.track} alt="" />
                 <div className="product-text">
                     <p className='title'>
@@ -147,6 +280,18 @@ const Home = () => {
                 <img src={home.roadmap} alt="" />
             </div>
         </section>
+        <marquee behavior="" direction="">
+            <div className="patners">
+            <Icon icon="cib:co-op" />
+            <Icon icon="carbon:logo-discord" />
+            <Icon icon="carbon:logo-npm" />
+            <Icon icon="carbon:logo-npm" />
+            <Icon icon="dashicons:buddicons-buddypress-logo" />
+            <Icon icon="carbon:logo-linkedin" />
+            <Icon icon="carbon:logo-github" />
+            <Icon icon="carbon:logo-python" />
+            </div>
+        </marquee>
         <section className="contact">
             
         </section>

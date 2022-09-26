@@ -1,0 +1,94 @@
+#contact{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#contact .header{
+    /* padding: 2rem; */
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    background: linear-gradient(20deg,rgba(41, 108, 153, 0.218),rgba(34, 34, 34, 0.349)),url(../assets/images/ai.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#contact .header-text p{
+    font-size: 80px;
+    margin-left: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 1;
+
+}
+#contact .header-image{
+    clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70%;
+    background-color: rgba(52, 52, 52, 0.184);
+    height: 100%;
+    backdrop-filter:   saturate(150%) sepia(40%) hue-rotate(60deg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* background: linear-gradient(0deg,rgba(0, 0, 0, 0.475),rgba(0, 119, 255, 0.382)),url(../assets/images/ai.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+#contact .header-image p{
+    width: 40%;
+    text-align: left;
+    margin-right: 20%;
+    font-size: 40px;
+    /* color: rgb(193, 240, 255); */
+    line-height: 1;
+}
+#contact form{
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 4rem 0;
+}
+#contact form .field{
+    width: 100%;
+}
+#contact form input{
+    min-height: 2.5rem;
+    width: 100%;
+    border: 1px solid black;
+    /* padding-left: 1rem; */
+    text-align: center;
+    border-radius: 3px;
+    margin: 1rem 0;
+}
+#contact form button{
+    background-color: rgb(85, 181, 255);
+    width: 30%;
+    color: white;
+}
+#contact form .message {
+    min-height: 7rem;
+}
+#contact .patners{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.607);
+    margin: 3rem 0;
+}
