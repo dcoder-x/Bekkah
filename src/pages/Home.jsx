@@ -166,7 +166,7 @@ const Home = () => {
             </h3>
         </section>
         <section className="goal">
-            <div className="header">
+            <div className="goal-header">
                 <p>
                     How do we help
                 </p>

@@ -6,52 +6,6 @@
     flex-direction: column;
 
 }
-#contact .header{
-    /* padding: 2rem; */
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70vh;
-    background: linear-gradient(20deg,rgba(41, 108, 153, 0.218),rgba(34, 34, 34, 0.349)),url(../assets/images/ai.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#contact .header-text p{
-    font-size: 80px;
-    margin-left: 2rem;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    line-height: 1;
-
-}
-#contact .header-image{
-    clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
-    width: 70%;
-    background-color: rgba(52, 52, 52, 0.184);
-    height: 100%;
-    backdrop-filter:   saturate(150%) sepia(40%) hue-rotate(60deg);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /* background: linear-gradient(0deg,rgba(0, 0, 0, 0.475),rgba(0, 119, 255, 0.382)),url(../assets/images/ai.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-}
-#contact .header-image p{
-    width: 40%;
-    text-align: left;
-    margin-right: 20%;
-    font-size: 40px;
-    /* color: rgb(193, 240, 255); */
-    line-height: 1;
-}
 #contact form{
     width: 40%;
     border-radius: 1rem;
@@ -88,7 +42,12 @@
     width: 90%;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 50px;
+    /* font-size: 50px; */
     color: rgba(255, 255, 255, 0.607);
     margin: 3rem 0;
+}
+@media screen and (max-width:800px) {
+    #contact form{
+        width: 80%;
+    }
 }

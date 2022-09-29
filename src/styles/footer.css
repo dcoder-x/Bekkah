@@ -48,3 +48,14 @@
     width: 100%;
     margin-top: 1rem;
 }
+@media screen and (max-width:600px) {
+    #footer{
+        flex-direction: column-reverse;
+    }
+    #footer .footer-links{
+        width: 100%;
+    }
+    #footer .logo-holder{
+        width: 90%;
+    }
+}

@@ -1,24 +1,17 @@
 import React from 'react'
-import { about } from '../assets/assets'
+import { about, headerImg } from '../assets/assets'
+import Header from '../components/header'
 import '../styles/about.css'
 
 const About = () => {
   return (
     <main id="about">
-      <div className="header">
-        <div className="header-text">
-          <p>
-            About Us
-          </p>
-        </div>
-        <div className="header-image">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque itaque at 
-          </p>
-        
-        </div>
-      </div>
+      <Header 
+      pageTitle={'About Us'}
+      desc={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Doloremque itaque at `}
+      bgImage={headerImg.digital}
+      />
         <section className="backstory">
           <h2>
             Back Story

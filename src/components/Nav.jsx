@@ -1,9 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { navData } from '../data/navData'
 import '../styles/nav.css'
 
 const Nav = () => {
+  const [clicked, setClicked] = useState()
   return (
       <nav id="nav">
         <div className="logo">
@@ -14,7 +16,7 @@ const Nav = () => {
             AI
           </p>
         </div>
-        <div className="menu-holder">
+        <div className={`menu-holder ${clicked?'show':'closed'}`}>
           {
             navData.map(menu=>{
               return(
@@ -28,6 +30,14 @@ const Nav = () => {
               )
             })
           }
+        </div>
+        <div 
+        className={`menuButtons ${clicked?'menu-clicked':null}`}
+        onClick={e=>{setClicked(!clicked);!clicked?e.target.classList.remove('menu-clicked'):null}}
+        >
+          <div className="menuLines"></div>
+          <div className="menuLines"></div>
+          <div className="menuLines"></div>
         </div>
       </nav>
   )

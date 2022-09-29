@@ -5,52 +5,6 @@
     align-items: center;
     flex-direction: column;
 }
-#about .header{
-    /* padding: 2rem; */
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70vh;
-    background: linear-gradient(20deg,rgba(41, 108, 153, 0.218),rgba(34, 34, 34, 0.349)),url(../assets/images/digital.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#about .header-text p{
-    font-size: 100px;
-    margin-left: 2rem;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    line-height: 1;
-
-}
-#about .header-image{
-    clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
-    width: 70%;
-    background-color: rgba(52, 52, 52, 0.184);
-    height: 100%;
-    backdrop-filter:   saturate(150%) sepia(40%) hue-rotate(60deg);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /* background: linear-gradient(0deg,rgba(0, 0, 0, 0.475),rgba(0, 119, 255, 0.382)),url(../assets/images/ai.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-}
-#about .header-image p{
-    width: 40%;
-    text-align: left;
-    margin-right: 20%;
-    font-size: 40px;
-    /* color: rgb(193, 240, 255); */
-    line-height: 1;
-}
 #about section{
     width: 90%;
     padding: 3rem 2rem;
@@ -106,4 +60,31 @@
 }
 #about .members .teammate img{
     width: 90%;
+}
+@media screen and (max-width:800px){
+    #about section .content{
+      flex-direction: column-reverse !important;
+    }
+    #about section .content:nth-child(even){
+        flex-direction: column !important;
+    }
+    #about section .content .text{
+        width: 100%;
+    }
+    #about section .content img{
+        width: 90%;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        transition: 3s ease-in-out;
+        transform: rotateY(360deg);
+    }
+    #about .members{
+        margin: 3rem 0;
+    }
+    #about .members .teammate{
+        margin: 0;
+    }
+    #about .members .teammate img{
+        width: 100%;
+    }
 }

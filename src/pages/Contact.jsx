@@ -1,23 +1,16 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
+import { headerImg } from '../assets/assets'
+import Header from '../components/header'
 import '../styles/contact.css'
 
 const Contact = () => {
   return (
     <main id='contact'>
-    <div className="header">
-      <div className="header-text">
-        <p>
-          Contact Us
-        </p>
-      </div>
-      <div className="header-image">
-        <p>
-          Reach out to us today.
-        </p>
-      
-      </div>
-    </div>
+    <Header 
+    pageTitle={'Contact'}
+    bgImage={headerImg.ai}
+    desc={'Reach out to us'}/>
     <form action="">
       <p style={{textAlign:"center",fontSize:'20px'}}>
         Send a quick message

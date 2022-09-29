@@ -119,17 +119,17 @@
     margin: 4rem 0;
     color: black;
 }
-#home .header{
+#home .goal-header{
     width: 60%;
 }
-#home .header p{
+#home .goal-header p{
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 20px;
     text-align: left;
 }
-#home .header h3{
+#home .goal-header h3{
     font-size: 32px;
     font-weight: 400;
     line-height: 46px;
@@ -291,4 +291,81 @@
     justify-content: space-evenly;
     font-size: 70px;
     color: rgba(255, 255, 255, 0.607);
+}
+@media screen and (max-width:800px) {
+    #home .hero{
+    flex-direction: column;
+    padding: 0;
+    }
+    .hero-text h2{
+        font-size: 35px;
+        line-height: 1;
+    }
+    .hero-image{
+        position: absolute;
+        width: 90%;
+    }
+    .hero-image img{
+        opacity: 0.3;
+    }
+    #home .mission{
+        width: 100%;
+        margin: 0;
+    }
+    #home .mission h3{
+        /* */
+        font-size: 20px;
+        line-height: 1;
+        width: 100%;
+        text-align: center;
+    }
+    #home .goal-header{
+        width: 100%;
+    }
+    #home .goal{
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0;
+    }
+    #home .goal  .tab{
+        flex-direction: column-reverse;
+    }
+    #home .goal .tab-info{
+        width: 100%;
+    }
+    #home .tab ul{
+        width: 100%;
+    }
+    #home .Products .product{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+    #home .Products .product img{
+        position: absolute;
+        opacity: 0.2;
+        right: 10%;
+        top: 20%;
+    }
+    #home .Products .product-text{
+        width: 100%;
+        padding: 1rem;
+    }
+    #home .founder{
+        flex-direction: column;
+    }
+    #home .founder img{
+        width: 90%;
+    }
+    #home .founder .text{
+        width: 100%;
+    }
+    .patners{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .hero{
+        min-height: 70vh;
+    }
 }

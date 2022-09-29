@@ -1,28 +1,22 @@
 import React from 'react'
+import { headerImg } from '../assets/assets'
+import Header from '../components/header'
 import { services } from '../data/services'
 import '../styles/services.css'
 const Services = () => {
   return (
     <main id='services'>
-      <div className="header">
-        <div className="header-text">
-          <p>
-            Our Services
-          </p>
-        </div>
-        <div className="header-image">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque itaque at 
-          </p>
-        
-        </div>
-      </div>
+      <Header 
+      pageTitle={'Our Services'}
+      desc={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Doloremque itaque at `}
+      bgImage={headerImg.aienergy}
+      />
       {
         services.map((service)=>{
             return(
                 <section className="service">
-                    <div style={{width:"40%"}}>
+                    <div className='service-text'>
                         <div className="title">
                             {
                                 service.title

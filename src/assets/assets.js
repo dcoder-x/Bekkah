@@ -14,19 +14,15 @@ import sample from '../assets/images/sample.jpg'
 import aidev from '../assets/images/aidev.jpg'
 import data from '../assets/images/data.jpg'
 import software from '../assets/images/software.jpg'
-
-
-
-
-
-
-
-
+import aienergy from '../assets/images/ai-energy.jpg'
+import ai from '../assets/images/ai.jpg'
+import digital from '../assets/images/digital.jpg'
 
 
 
 const home = {heroimg,mission,roadmap,founder,dataDriven,discovery,personalised,track,science}
 const about = {backstory,aboutmission,vision,sample}
 const service = {aidev,data,software}
+const headerImg = {aienergy,ai,digital}
 
-export {home,about,service}
+export {home,about,service,headerImg}

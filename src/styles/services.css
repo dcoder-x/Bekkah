@@ -6,52 +6,6 @@
     flex-direction: column;
 
 }
-#services .header{
-    /* padding: 2rem; */
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70vh;
-    background: linear-gradient(20deg,rgba(41, 108, 153, 0.218),rgba(34, 34, 34, 0.349)),url(../assets/images/ai-energy.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#services .header-text p{
-    font-size: 100px;
-    margin-left: 2rem;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    line-height: 1;
-
-}
-#services .header-image{
-    clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
-    width: 70%;
-    background-color: rgba(52, 52, 52, 0.184);
-    height: 100%;
-    backdrop-filter:   saturate(150%) sepia(40%) hue-rotate(60deg);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /* background: linear-gradient(0deg,rgba(0, 0, 0, 0.475),rgba(0, 119, 255, 0.382)),url(../assets/images/ai.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-}
-#services .header-image p{
-    width: 40%;
-    text-align: left;
-    margin-right: 20%;
-    font-size: 40px;
-    /* color: rgb(193, 240, 255); */
-    line-height: 1;
-}
 #services .service{
     width: 90%;
     display: flex;
@@ -74,6 +28,12 @@
 #services .service .desc{
     width: 90%;
 }
+.service-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 #services .service img{
     width: 40%;
     /* max-height: 40vh; */
@@ -90,4 +50,25 @@
     background-color:rgb(85, 181, 255) ;
     color: white;
     font-size: 20px;
+}
+@media screen and (max-width:800px) {
+    #services .service{
+        flex-direction: column-reverse !important;
+        padding: 1rem 2rem;
+    }
+    #services .service img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    #services .service .title{
+        text-align: center;
+        font-size: 30px;
+        width: 90%;
+    }
+    .service-text{
+        width: 100%;
+    }
+    #services .book{
+        font-size: 30px;
+    }
 }
