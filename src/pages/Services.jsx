@@ -1,6 +1,6 @@
 import React from 'react'
 import { headerImg } from '../assets/assets'
-import Header from '../components/header'
+import Header from '../components/Header'
 import { services } from '../data/services'
 import '../styles/services.css'
 const Services = () => {

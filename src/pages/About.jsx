@@ -1,6 +1,6 @@
 import React from 'react'
 import { about, headerImg } from '../assets/assets'
-import Header from '../components/header'
+import Header from '../components/Header'
 import '../styles/about.css'
 
 const About = () => {

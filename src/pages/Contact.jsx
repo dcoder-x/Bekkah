@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
 import { headerImg } from '../assets/assets'
-import Header from '../components/header'
+import Header from '../components/Header'
 import '../styles/contact.css'
 
 const Contact = () => {
